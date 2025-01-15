@@ -23,7 +23,7 @@ export default function Collection({
     return collection.readings.reduce((a, b) => a + b.ml, 0);
   }, [collection.readings, collection.readings.length]);
 
-  const { addReading, removeReading } = useCollections();
+  const { addReading, removeReading, removeCollection } = useCollections();
 
   useEffect(() => {
     if (selectedCollection !== collection.id) setCollapsed(true);
@@ -114,6 +114,14 @@ export default function Collection({
           <img src={AddIcon} width={24} height={24} alt="add icon form" />
         </button>
       </form>
+      {collection.readings.length === 0 && (
+        <button
+          className="bg-red-100 text-red-600 px-4 py-2 mt-4 w-full rounded-lg"
+          onClick={() => removeCollection({ collectionID: collection.id })}
+        >
+          Delete Collection
+        </button>
+      )}
     </section>
   );
 }
