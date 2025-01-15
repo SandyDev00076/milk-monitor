@@ -101,7 +101,7 @@ export default function Collection({
         className="flex-1 flex items-center gap-4"
       >
         <input
-          className=" px-4 py-3 bg-white rounded-lg flex-1"
+          className=" px-4 py-3 bg-white rounded-lg flex-1 min-w-0"
           value={reading}
           type="number"
           placeholder="Add ml of milk"
