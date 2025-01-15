@@ -108,7 +108,7 @@ export default function Collection({
           onChange={(e) => setReading(e.target.value)}
         />
         <button
-          className="bg-blue-600 text-white rounded-lg px-4 py-3 flex items-center gap-2 disabled:bg-gray-300"
+          className="bg-blue-600 w-14 text-white rounded-lg px-4 py-3 flex items-center gap-2 disabled:bg-gray-300"
           disabled={!reading}
         >
           <img src={AddIcon} width={24} height={24} alt="add icon form" />

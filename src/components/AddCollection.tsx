@@ -40,13 +40,13 @@ export default function AddCollection() {
             onChange={(e) => setName(e.target.value)}
           />
           <button
-            className="bg-blue-600 text-white rounded-lg px-4 py-3 flex items-center gap-2 disabled:bg-gray-300"
+            className="bg-blue-600 w-14 text-white rounded-lg px-4 py-3 flex items-center gap-2 disabled:bg-gray-300"
             disabled={!name}
           >
             <img src={AddIcon} width={24} height={24} alt="add icon form" />
           </button>
           <button
-            className="bg-gray-400 text-white rounded-lg px-4 py-3 flex items-center gap-2 disabled:bg-gray-300"
+            className="bg-gray-400 w-14 text-white rounded-lg px-4 py-3 flex items-center gap-2 disabled:bg-gray-300"
             type="button"
             onClick={() => showForm(false)}
           >
