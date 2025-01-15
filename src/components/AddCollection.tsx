@@ -35,7 +35,7 @@ export default function AddCollection() {
           className="flex-1 flex items-center gap-2"
         >
           <input
-            className=" px-4 py-3 bg-gray-100 rounded-lg flex-1 min-w-0"
+            className=" px-4 py-3 bg-gray-100 rounded-lg flex-1 min-w-0 w-full"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
